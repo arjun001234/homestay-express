@@ -1,0 +1,28 @@
+<div class="homestay-container">
+   <form>
+       <input type="text" name="search" placeholder="Search" />
+       <select id="fields" name="fields">
+          <option value="name">Name</option>
+          <option value="city">City</option>
+          <option value="state">State</option>
+          <option value="country">Country</option>
+       </select>
+       <button>Search</button>
+   </form>
+   <div class="homestays">
+       {{#each homestays}}
+       <section>
+           <img />
+           <div>
+               <h1>{{name}}</h1>
+               <p>{{desc}}</p>
+               <button><a href="/homestay/{{id}}">Book Now</a></button>
+           </div>
+       </section>
+       {{else}}
+         <div>
+             <h1>Not Found</h1>
+         </div>
+       {{/each}}
+   </div>
+</div>

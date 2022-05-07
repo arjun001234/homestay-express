@@ -1,0 +1,229 @@
+.landing-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 2;
+}
+
+.home-container button, p, h1 {
+    z-index: 3;
+}
+
+.home-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #15172b;
+    outline: none;
+    border: none;
+}
+
+.home-container button a {
+    color: #fff;
+}
+
+.layout {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.homestay-container {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 50px;
+   margin: 50px 0px;
+}
+
+.homestay-container form {
+    width: 80%;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.homestay-container form input, select, button {
+    outline: none;
+    border: 2px solid #15172b;
+    font-size: 16px;
+    padding: 10px;
+}
+
+
+.homestay-container form select {
+    min-width: 70px;
+}
+
+.homestay-container form input {
+    flex: 1;
+}
+
+.homestay-container form button {
+    background-color: #15172b;
+    color: #fff;
+}
+
+.homestays{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.homestays > section {
+    height: 400px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    flex: 0 1 33%;
+    padding: 20px;
+}
+
+.homestays > section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.homestays > section img {
+    flex: 1
+}
+
+.homestays > section > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.homestays > section > div > button {
+    background-color: #15172b;
+    outline: none;
+}
+
+.homestays > section > div > button > a {
+    color: #fff;
+}
+
+.homestays > section > div h1 {
+    padding: 0%;
+}
+
+.homestays div {
+    width: 100%;
+}
+
+.homestays > div > h1 {
+    text-align: center;
+}
+
+.single-homestay {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    overflow: visible;
+    margin: 100px 0px;
+}
+
+.single-homestay > section {
+    height: 400px;
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+.single-homestay > section > div {
+    flex: 0 0 50%;
+}
+
+.room-container{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    height: 100px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.room-container > section:last-child {
+    padding: 0px 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #15172b;
+}
+
+.room-cart {
+    width: 100%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    min-height: 100px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-cart h1 {
+    padding: 0%;
+    overflow: hidden;
+}
+
+.single-homestay > button {
+    background-color: #15172b;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 10px;
+    height: auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

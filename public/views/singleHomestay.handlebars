@@ -1,0 +1,34 @@
+<div class="single-homestay">
+   <section>
+      <div>
+         <img />
+      </div>
+      <div>
+         <h1>{{homestay.name}}</h1>
+         <p>{{homestay.desc}}</p>
+         <p>Country -> {{homestay.country}}</p>
+         <p>State ->{{homestay.state}}</p>
+         <p>City -> {{homestay.city}}</p>
+         <p>Address -> {{homestay.address}}</p>
+      </div>
+   </section>
+   {{#each homestay.rooms}}
+   <div class="room-container">
+       <section>
+         <p>{{roomType}}</p>
+         <p>Occupancy -> {{occupancy}}</p>
+       </section>
+       <section>
+         <p>&#8377; {{price}}</p>
+       </section>
+   </div>
+   {{else}}
+   <div>
+      <h1>No Rooms Available</h1>
+   </div>
+   {{/each}}
+   <div class="room-cart">
+      <h1>Click on room to add</h1>
+   </div>
+   <button>Book</button>
+</div>

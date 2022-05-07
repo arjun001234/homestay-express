@@ -1,0 +1,37 @@
+.header{
+    display: flex;
+    padding: 10px 30px;
+    background-color: #15172b;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    padding: 0%;
+}
+
+.nav-list{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    font-size: 18px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+}
